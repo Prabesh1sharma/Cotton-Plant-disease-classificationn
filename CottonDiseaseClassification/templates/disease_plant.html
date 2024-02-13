@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <title>COTTON PLANT DISEASE PREDICTION</title>
+ 
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+ 
+        .card-style {
+            background-color: #dcdcdc;
+ 
+        }
+ 
+        .content {
+            padding: 15px;
+            color: white;
+            background-color: rgb(153, 156, 150);
+            /* font-size: 1rem; */
+        }
+ 
+        @media (max-width: 430px) and (min-width: 200px) {
+ 
+            .contents {
+                font-size: 0.6rem;
+                color: chartreuse;
+            }
+ 
+            .content-h1 {
+ 
+                font-size: 1rem;
+            }
+        }
+ 
+        .border img {
+            border-radius: 15px;
+            border: 2px solid black;
+        }
+
+        
+
+        
+    </style>
+</head>
+ 
+<body>
+ 
+    <style>
+        .custom-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .custom-container .text-container {
+            flex: 1;
+            padding: 20px; /* Adjust as needed */
+        }
+    
+        .custom-container .image-container {
+            flex: 1;
+            text-align: right;
+        }
+    
+        .custom-container .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    
+    <div class="custom-container">
+        <div class="text-container">
+            <h1>Cotton Disease Prediction Project by: Prabesh Sharma</h1>
+            <p>Disclaimer: The model can't provide 100% accuracy all the time.</p>
+        </div>
+        <div class="image-container">
+            <img src="/static/images/photo_2024-01-15_11-42-13.jpg" alt="PRABESH SHARMA">
+        </div>
+    </div>
+    
+    
+ 
+    <div class="container my-2">
+        <div class="row mb-5">
+ 
+            <div class="col-sm" style="margin-bottom: 23px;">
+                <span class="border border-primary">
+                    <img src="/{{user_image}}" alt="User Image" class="img-thumbnail">
+                     
+                </span>
+            </div>
+ 
+            <div class="col-sm">
+ 
+                <div>
+                    <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                        {{pred_output}} </h1>
+                </div>
+ 
+                <h2>Disease Name: </span></h2>
+                <h3 style="line-height: 100%;">Attack of Leaf Sucking and Chewing Pests
+                    </h3>
+                <hr class="w-100 mx-auto ">
+            </div>
+        </div>
+ 
+        <h1> Solution for Disease: </h1>
+        <p><strong>Use any one Systemic Insecticide, which contain<i> Flonicamid 50%/ Thiamethoxam 25% WG / Imidacloprid
+                    17.8 Sl / Acetamiprid 20% SP.</i></strong></p>
+        <p></p>
+        
+    </div>
+ 
+    <section>
+ 
+        <div class="container">
+            <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                class="text-center my-3 content-h1">
+                Recommended Products</h1>
+        </div>
+ 
+        <div class="container">
+ 
+            <div class="card-columns">
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="\static\images\preet.png" alt="">
+                        <h3 class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="\static\images\ulala.png" alt="">
+                        <h3 class="card-text">Dose: 25-40 gm/Acre</h3>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px" class="img-fluid" src="/static/images/victor.png" alt="">
+                        <h3 class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/confidor.png" alt="">
+                        <h3 class="card-text">Dose: 25-35 ml/Acre</h3>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/panama.png" alt="">
+                        <h3 class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="/static/images/actara.png" alt="">
+                        <h3 class="card-text">Dose: 60-80 gm/Acre</h3>
+                    </div>
+                </div>
+ 
+            </div>
+ 
+            <!-- <div class="container-fluid contents"> -->
+
+            <!-- </div> -->
+        </div>
+ 
+    </section>
+ 
+</body>
+<footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        
+        <span class="ml-3 text-xl">Prabesh Sharma</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">Github
+        <a href="https://github.com/Prabesh1sharma/Book-recommendation-system" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Prabesh1sharma</a>
+      </p>
+      
+    </div>
+  </footer>  
+ 
+</html>
